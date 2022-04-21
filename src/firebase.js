@@ -1,4 +1,4 @@
-import firebase from 'wfirebase';
+import firebase from 'firebase';
 
 
 
