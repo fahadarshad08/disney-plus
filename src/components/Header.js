@@ -20,23 +20,23 @@ const Header = (props) =>{
               <img src="/imagess/home-icon.svg" alt="HOME" />
               <span>HOME</span>
             </a>
-            <a>
+            <a href="/">
               <img src="/imagess/search-icon.svg" alt="SEARCH" />
               <span>SEARCH</span>
             </a>
-            <a>
+            <a href="/">
               <img src="/imagess/watchlist-icon.svg" alt="WATCHLIST" />
               <span>WATCHLIST</span>
             </a>
-            <a>
+            <a href="/">
               <img src="/imagess/original-icon.svg" alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
-            <a>
+            <a href="/">
               <img src="/imagess/movie-icon.svg" alt="MOVIES" />
               <span>MOVIES</span>
             </a>
-            <a>
+            <a href="/">
               <img src="/imagess/series-icon.svg" alt="SERIES" />
               <span>SERIES</span>
             </a>
