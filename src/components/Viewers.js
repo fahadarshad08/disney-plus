@@ -24,7 +24,7 @@ const Viewers = (props) => {
       <Wrap>
         <img src="/imagess/viewers-starwars.png" alt="" />
         <video autoPlay={true} loop={true} playsInline={true}>
-          <source src="/videos/1608229455-star-wars.mp4" type="video/mp4" />
+          <source src="/videoss/1608229455-star-wars.mp4" type="video/mp4" />
         </video>
       </Wrap>
       <Wrap>
@@ -79,6 +79,7 @@ const Wrap = styled.div`
     height: 100%;
     position: absolute;
     top: 0px;
+    right:1px;
     opacity: 0;
     z-index: 0;
   }
