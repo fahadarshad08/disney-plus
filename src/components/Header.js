@@ -201,10 +201,10 @@ const NavMenu = styled.div`
       }
     }
   }
-  /* @media (max-width: 768px) {
+   @media (max-width: 768px) {
     display: none;
-  } */
-`;
+  } 
+`
 
 const Login = styled.a`
   background-color: rgba(0, 0, 0, 0.6);
@@ -219,11 +219,11 @@ const Login = styled.a`
     color: #000;
     border-color: transparent;
   }
-`;
+`
 
 const UserImg = styled.img`
   height: 100%;
-`;
+`
 
 const DropDown = styled.div`
   position: absolute;
@@ -238,7 +238,7 @@ const DropDown = styled.div`
   letter-spacing: 3px;
   width: 100px;
   opacity: 0;
-`;
+`
 
 const SignOut = styled.div`
   position: relative;
@@ -259,4 +259,4 @@ const SignOut = styled.div`
       transition-duration: 1s;
     }
   }
-`;
+`

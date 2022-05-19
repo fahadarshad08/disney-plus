@@ -1,46 +1,30 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
+import { selectTrending } from "../features/movie/movieSlice";
+
 
 
 const Trending = (props) => {
+  const movies = useSelector(selectTrending);
+
   
 
   return (
     <Container>
-      <h4>Trending</h4>
-      <Content>
-       <Wrap>
-           <Link to="/">
-           <img
-           src="https://s3-us-west-2.amazonaws.com/production-dmcgopub/cms/production/site/static/Catalog/Acquisition_Agnostic_191x269/C10A19_191x269_ToyStory4_Agnostic.png"
-           />
-       </Link>
-       </Wrap>
-       <Wrap>
-           <Link to="/">
-           <img
-           src="https://s3-us-west-2.amazonaws.com/production-dmcgopub/cms/production/site/static/Catalog/Acquisition_Agnostic_191x269/C10A19_191x269_ToyStory4_Agnostic.png"
-           />
-       </Link>
-       </Wrap>
-       <Wrap>
-           <Link to="/">
-           <img
-           src="https://s3-us-west-2.amazonaws.com/production-dmcgopub/cms/production/site/static/Catalog/Acquisition_Agnostic_191x269/C10A19_191x269_ToyStory4_Agnostic.png"
-           />
-       </Link>
-       </Wrap>
-       <Wrap>
-           <Link to="/">
-           <img
-           src="https://s3-us-west-2.amazonaws.com/production-dmcgopub/cms/production/site/static/Catalog/Acquisition_Agnostic_191x269/C10A19_191x269_ToyStory4_Agnostic.png"
-           />
-       </Link>
-       </Wrap>
-      
-
-      </Content>
-    </Container>
+    <h4>Trending</h4>
+    <Content>
+      {movies &&
+        movies.map((movie, key) => (
+          <Wrap key={key}>
+            {movie.id}
+            <Link to={`/detail/` + movie.id}>
+              <img src={movie.cardImg} alt={movie.title} />
+            </Link>
+          </Wrap>
+        ))}
+    </Content>
+  </Container>
   );
 };
 
