@@ -1,1 +1,1 @@
-disneypluss-clone https://shimmering-faun-b25fe5.netlify.app/
+disneypluss-clone https://spontaneous-froyo-b20649.netlify.app/
